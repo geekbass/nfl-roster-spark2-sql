@@ -10,4 +10,4 @@ NOTE: This does not use ANY best practices for running Spark SQL queries but jus
 
 Good reference blog post: https://www.supergloo.com/fieldnotes/spark-sql-csv-examples-python/
 
-See https://github.com/geekbass/iterm-profile for adding pyspark to Jupyter in your bash_profile
+See https://github.com/geekbass/iterm-profile for adding pyspark to Jupyter in your bash_profile or https://mengdong.github.io/2016/08/08/fully-armed-pyspark-with-ipython-and-jupyter/ (Jupyter)
