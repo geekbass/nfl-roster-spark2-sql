@@ -6,7 +6,7 @@ NOTE: This does not use ANY best practices for running Spark SQL queries but jus
 
 
 ### Screenshot
-![jupyter notebook screenshot](nfl-roster-notebook.png)
+![jupyter notebook screenshot](nfl-roster-notebook.jpg)
 
 Good reference blog post: https://www.supergloo.com/fieldnotes/spark-sql-csv-examples-python/
 
