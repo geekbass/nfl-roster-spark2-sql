@@ -1,0 +1,27 @@
+
+# Create a table from the 2016 NFL Roster
+df = spark.read.format('com.databricks.spark.csv').options(header='true', inferschema='true').load('nfl-players-2016.csv')
+df.registerTempTable("players")
+
+# Display the table Schema
+df.printSchema
+
+# Show what the table Looks like. Only 20 Lines shown here.
+sqlDF = spark.sql("SELECT * FROM players")
+sqlDF.show()
+
+# Show top 20 players over the age of 35
+ageDF = spark.sql("SELECT * FROM players WHERE age > 35")
+ageDF.show()
+
+# Count the number of players that went to Ohio State
+osuDF = spark.sql("SELECT * FROM players WHERE college = 'Ohio State'")
+osuDF.count()
+
+# Show top 20 players from Ohio State and sort by the oldest player
+osuDF.sort("age", ascending=False).show()
+
+# Top 20 Biggest Players by weight and height
+playersDF = spark.sql("SELECT * FROM players")
+playersDF.sort("height", ascending=False).show()
+playersDF.sort("weight", ascending=False).show()
