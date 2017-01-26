@@ -5,7 +5,7 @@ My first little project to start my journey to learn Data Science with Spark and
 NOTE: This does not use ANY best practices for running Spark SQL queries but just used as a tool to learn and become familiar.
 
 
-### Screenshot
+### Jupyter Notebook 
 ![jupyter notebook screenshot](nfl-roster-notebook.jpg)
 
 Good reference blog post: https://www.supergloo.com/fieldnotes/spark-sql-csv-examples-python/
